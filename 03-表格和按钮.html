@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>03-表格和按钮</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 表格: 基本表格样式 -->
+  <table class="table">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr>
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+  </table>
+
+  <!-- 表格: 在表格中产生隔行加单色背景的效果 -->
+  <table class="table table-striped">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr>
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+  </table>
+
+  <!-- 表格: 为表格增加边框 -->
+  <table class="table table-bordered">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr>
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+  </table>
+
+  <!-- 表格: 设置鼠标悬停时实现背景颜色效果 -->
+  <table class="table table-hover">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr>
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+  </table>
+
+  <!-- 表格: 为每一行设置不同的背景样式
+    active: 鼠标悬停在单元格
+    success: 标识成功或积极的动作
+    info: 标识普通提示或动作
+    warning: 标识警告
+  -->
+  <table class="table">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr class="warning">
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr class="success">
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+    <tr class="info">
+      <td>m18</td>
+      <td>10.10.60.244</td>
+    </tr>
+    <tr class="active">
+      <td>m9</td>
+      <td>10.10.4.114</td>
+    </tr>
+  </table>
+
+  <!-- 表格: 隐藏某一行 -->
+  <table class="table">
+    <tr>
+      <th>主机</th>
+      <th>IP</th>
+    </tr>
+    <tr class="sr-only">
+      <td>m10</td>
+      <td>10.10.49.63</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>10.10.11.130</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- 按钮: 样式 -->
+  <input type="button" value="Submit" class="btn btn-default">
+  <input type="button" value="Submit" class="btn btn-success">
+  <input type="button" value="Submit" class="btn btn-info">
+  <input type="button" value="Submit" class="btn btn-warning">
+  <input type="button" value="Submit" class="btn btn-danger">
+  <input type="button" value="Submit" class="btn btn-primary">
+  <input type="button" value="Submit" class="btn btn-link">
+  <a href="#" class="btn btn-default">Link</a>
+
+  <!-- 按钮: 大小 -->
+  <input type="button" value="Submit" class="btn btn-default btn-lg">
+  <input type="button" value="Submit" class="btn btn-default btn-sm">
+  <input type="button" value="Submit" class="btn btn-default btn-xs">
+
+  <!-- 按钮: 状态 -->
+  <input type="button" value="Submit" class="btn btn-default btn-block">
+  <input type="button" value="Submit" class="btn btn-default active disable">
+  <hr>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
